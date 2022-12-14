@@ -1,5 +1,5 @@
 * {
-  font-family: 'Roboto', sans-serif; }
+  font-family: "Roboto", sans-serif; }
 
 header {
   position: relative; }
@@ -194,6 +194,8 @@ nav {
   min-height: 864px;
   padding: 48px 0 79px 0;
   background: url("../img/mobile_bg.jpg") center center/cover no-repeat; }
+  .mobile .row {
+    margin-top: 32px; }
   .mobile_item {
     width: 320px;
     height: 280px;
@@ -210,3 +212,5 @@ nav {
       background: url("../img/cards_bg/card5.jpg") center center/cover no-repeat; }
     .mobile_item_6 {
       background: url("../img/cards_bg/card6.jpg") center center/cover no-repeat; }
+
+/*# sourceMappingURL=style.css.map */
