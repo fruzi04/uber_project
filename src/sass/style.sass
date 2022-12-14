@@ -1,3 +1,5 @@
+$main-color: #1eacc7
+$second-color: #FF5656
 *
 	font-family: 'Roboto', sans-serif
 header
@@ -227,7 +229,9 @@ nav
 			border-radius: 100%
 			cursor: pointer
 .choose
-	background: url('../img/cardark_bg.jpg') center (center / cover) no-repeat
+	position: relative
+	.container1
+		padding-top: 56px
 	.choose_title
 		font-weight: 700
 		font-size: 38px
@@ -243,14 +247,22 @@ nav
 		text-align: center
 		color: #FFFFFF		
 	.car2
-		margin-top: 54px
-		text-align: center
+		position: absolute
+		top: 231px
+		left: 50%
+		transform: translateX(-50%)
 	.choose_descr
-		margin-top: 46.5px
+		padding-top:240px
 		text-align: center
 		font-weight: 300
 		font-size: 17px
 		line-height: 24px
 		color: #222222	
-		background-color: #fff
-				
+	.container1
+		background-color: #070716
+		width: 1918.08px
+		height: 499px
+	.container2			
+		width: 1920px
+		height: 397px
+		background: url('../img/car_bg.jpg') center (center / cover) no-repeat
