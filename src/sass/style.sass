@@ -1,5 +1,11 @@
 $main-color: #1eacc7
 $second-color: #FF5656
+
+=btn_hover
+	&:hover
+		background-image: none
+		background-color: $main-color					
+	
 *
 	font-family: 'Roboto', sans-serif
 header
@@ -29,16 +35,16 @@ nav
 	width: 100%
 	height: 84px
 	background-color: rgba(0, 0, 0, .6)
-	.subheader_logo
+	&_logo
 		display: block
 		max-width: 100%
 		margin-top: 16px
-	.subheader_oficcial
+	&_oficcial
 		font-weight: 100
 		font-size: 13px
 		color: #FFFFFF
 		opacity: 0.5
-	.subheader_phone
+	&_phone
 		display: block
 		margin-top: 8px
 		font-weight: 400
@@ -47,7 +53,7 @@ nav
 		text-transform: uppercase
 		color: white
 		text-align: right
-	.subheader_btn
+	&_btn
 		width: 172px
 		height: 46px
 		font-weight: 400
@@ -61,6 +67,7 @@ nav
 		border: none
 		margin-top: 19px
 		border-radius: 4px
+		+btn_hover
 .subheader_call
 	margin-top: 19px
 	font-weight: 300
@@ -71,7 +78,7 @@ nav
 	min-height: 800
 	background: url(../img/uber_bg.jpg) center center/cover no-repeat
 	padding: 150px 0 135px 0
-	.promo_header
+	&_header
 		color: #FFFFFF
 		font-weight: 700
 		text-transform: uppercase
@@ -79,7 +86,7 @@ nav
 		line-height: 60px
 		margin: 0
 		text-align: center
-	.promo_subheader
+	&_subheader
 		color: #FFFFFF
 		font-weight: 700
 		text-transform: uppercase
@@ -88,13 +95,13 @@ nav
 		margin: 0
 		margin-top: 25px
 		text-align: center
-	.promo_descr
+	&_descr
 		color: white
 		font-size: 18px
 		font-weight: 400
 		line-height: 24px
 		margin-top: 23px
-	.promo_btn
+	&_btn
 		button
 			display: block
 			margin: 118px auto 0 auto
@@ -109,6 +116,7 @@ nav
 			box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12)
 			border: none
 			border-radius: 4px
+			+btn_hover
 .label
 	margin: 0 auto
 	height: 24px
@@ -228,11 +236,30 @@ nav
 			margin: 0 auto
 			border-radius: 100%
 			cursor: pointer
+			&:before
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $main-color
+				transition: 0.3s all
+			&:after
+				content: ''
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				height: 14px
+				width: 2px
+				background-color: $main-color
+				transition: 0.3s all
+			&:hover
+				&:before, &:after
+					background-color: $second-color 		
 .choose
 	position: relative
 	.container1
 		padding-top: 56px
-	.choose_title
+	&_title
 		font-weight: 700
 		font-size: 38px
 		line-height: 48px
@@ -240,7 +267,7 @@ nav
 		text-transform: uppercase
 		color: #FFFFFF
 		margin-top: 26px
-	.choose_subtitle
+	&_subtitle
 		font-weight: 400
 		font-size: 17px
 		line-height: 21px
@@ -251,7 +278,7 @@ nav
 		top: 231px
 		left: 50%
 		transform: translateX(-50%)
-	.choose_descr
+	&_descr
 		padding-top:240px
 		text-align: center
 		font-weight: 300
@@ -266,3 +293,29 @@ nav
 		width: 1920px
 		height: 397px
 		background: url('../img/car_bg.jpg') center (center / cover) no-repeat
+.require
+	padding: 68px 0 84px 0
+	&_block
+		margin: 33px 0
+		&_nbm
+			margin-bottom: 0px	
+	&_title
+		color: #1ca8c3
+		font-size: 22px
+		font-weight: 400
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 22px
+		li
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 10px
+			&:before
+				content: ''
+				display:block 
+				width: 21px
+				height: 20px
+				background: url('../icons/check_blue.svg') center (center / cover) no-repeat	
+				
