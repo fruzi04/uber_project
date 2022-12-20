@@ -295,10 +295,15 @@ nav
 		background: url('../img/car_bg.jpg') center (center / cover) no-repeat
 .require
 	padding: 68px 0 84px 0
+	&_descr
+		font-weight: 300
+		font-size: 17px
+		line-height: 24px
+		color: $main-color
 	&_block
 		margin: 33px 0
-		&_nbm
-			margin-bottom: 0px	
+		&_nmb
+			margin-bottom: 0px
 	&_title
 		color: #1ca8c3
 		font-size: 22px
@@ -308,15 +313,76 @@ nav
 		padding-left: 50px
 		margin-top: 22px
 		li
+			position: relative 
 			font-size: 17px
 			font-weight: 300
 			line-height: 24px
 			margin-bottom: 10px
-			&:before
-				content: ''
-				width: 21px
-				height: 20px
-				top: 0
-				right: 0
-				background: url('../icons/check_blue.svg') center (center / cover) no-repeat	
-				
+			&::before
+				content: url('../icons/check_blue.svg')
+				display: block
+				position: absolute
+				left: -32px
+				top: 3px
+				width: 15px
+				height: 15px
+				margin-right: 5px
+.warning
+	.require_title
+		color: $second-color
+	.require_list
+		li
+			&::before
+				content: url('../icons/check_red.svg')
+.world
+	background: url('../img/world_bg.jpg')				
+	min-height: 716px
+	padding: 46px 0 22px
+	&_title
+		margin-top: 26px
+		font-weight: 700
+		font-size: 38px
+		text-align: center
+		text-transform: uppercase
+		color: #FFFFFF
+	&_title_descr
+		font-weight: 400
+		font-size: 17px
+		text-align: center
+		color: #FFFFFF
+	&_link
+		font-weight: 400
+		font-size: 15px
+		line-height: 68px
+		text-align: center
+		text-transform: uppercase
+		color: $main-color
+		margin-top: 626px
+.footer
+	min-height: 134px
+	&_line
+		&:before
+			content: ''
+			display: block
+			width: 301px
+			height: 7px
+			background-color: $main-color
+			transition: 0.3s all
+			margin: 12px auto
+	.socials
+		display: flex
+		align-items: center
+		margin-left: 22px
+	&_socials
+		min-width: 156px
+		min-height: 35px
+		background: #070716
+		border-radius: 100%
+		display: flex
+		align-items: center
+		text-align: center
+		margin-left: 6px
+		margin-top: 30px
+		img
+			margin: 0 auto 	 	
+
