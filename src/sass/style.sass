@@ -357,7 +357,12 @@ nav
 		text-align: center
 		text-transform: uppercase
 		color: $main-color
-		margin-top: 626px
+		text-decoration: none
+		&_item
+			width: 223px
+			height: 68px
+			margin: 0 auto
+			margin-top: 626px
 .footer
 	min-height: 134px
 	&_line
@@ -369,20 +374,38 @@ nav
 			background-color: $main-color
 			transition: 0.3s all
 			margin: 12px auto
-	.socials
+	.language
+			text-align: center
+			font-weight: 400
+			font-size: 11px
+			text-align: center
+			text-transform: uppercase
+			color: #1FBAD6
+	&_container
 		display: flex
-		align-items: center
-		margin-left: 22px
-	&_socials
-		min-width: 156px
-		min-height: 35px
-		background: #070716
-		border-radius: 100%
-		display: flex
-		align-items: center
-		text-align: center
-		margin-left: 6px
-		margin-top: 30px
-		img
-			margin: 0 auto 	 	
-
+	&_links
+		margin: 0 auto
+		.big_links
+			display: flex
+			text-align: center
+		.link_big
+				margin-left: 19px
+				font-weight: 300
+				font-size: 15px
+				line-height: 68px
+				text-transform: uppercase
+				color: #070716
+				text-decoration: none
+		.margin_left
+			margin-left: 43px
+		.small_links
+			display: flex
+		.link_small
+				margin-left: 19px
+				font-weight: 300
+				font-size: 15px
+				line-height: 68px
+				text-transform: uppercase
+				color: #999999
+				text-decoration: none
+			
