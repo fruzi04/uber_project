@@ -47,6 +47,7 @@
 		.column, .column2, .column3, .column4
 			flex-direction: column
 			align-items: center
+			margin-right: 0px
 		&_icon_descr
 			width: 300px
 			margin-top: 20px
@@ -77,16 +78,17 @@
 		transition: 0.6s all
 		&_active
 			left: 0
+			text-align: center
 		&_item
 			margin: 10px 0
 			padding-right: 0px
 			border-right: none
 		&_link
-			font-size: 15px	
+			font-size: 15px
 	.hamburger
 		display: block
 		position: absolute
-		right: 10px
+		right: 35px
 		top: 50%
 		transform: translateY(-50%)
 		width: 20px
@@ -149,18 +151,119 @@
 		&_descr
 			color: #fff
 			padding-top: 20px
+	.footer
+		&_download
+			top: 10px
+			right: 30px		
 
 @media (max-width: 575px)			
+	nav
+		height: 30px
 	header	
 		.subheader
+			height: 60px
 			&_oficcial
 				display: none
 			&_logo				
-				margin-top: 27px	
+				margin-top: 15px	
 			&_phone
 				font-size: 12px
 				font-weight: 400
 				text-transform: uppercase
+				margin-top: 3px
 			&_btn
-				width: 141px
-				font-size: 13px
+				height: 25px
+				width: 110px
+				font-size: 10px
+				margin-top: 5px
+	.promo
+		min-height: 400px
+		padding: 53px 0 35px 0
+		&_header
+			margin-top: 100px
+			font-size: 30px
+			line-height: 35px
+		&_subheader
+			font-size: 15px
+			margin-top: 5px
+			line-height: 23px
+		&_descr	
+			display: none
+		&_btn
+			margin: 0 auto
+			margin-top: 73px
+			width: 210px
+			height: 50px
+			button
+				margin: 73px auto 0px auto
+	.promo_reasons
+		padding: 22px 0 36px 0
+		.column, .column2, .column3, .column4
+			margin-top: 46px
+		&_descr
+			width: 100%
+			margin-top: 27px
+			font-size: 16px
+			span
+				font-size: 16px	
+	.title
+		font-size: 16px
+		margin-top: 16px
+	.choose
+		.car2
+			top: 265px
+	.require
+		padding-top: 20px
+		&_title
+			font-size: 16px
+			margin-left: 16px
+	.world
+		min-height: 235px
+		&_descr
+			font-size: 13px
+		&_item
+			margin-top: 210px	
+	.label
+		font-size: 7px
+		height: 26px
+		width: 79px
+	.footer
+		overflow: hidden;
+    	width: 100%
+		&_line
+			&:before
+				content: ''
+				display: block
+				width: 255px
+				height: 6px
+				background-color: $main-color
+				transition: 0.3s all
+				margin: 12px auto
+		&_links
+			.big_links
+				.link_big
+					font-size: 12px
+					margin-left: 9px
+					line-height: 40px
+			.small_links
+				display: flex
+				flex-wrap: wrap
+				justify-content: space-between
+				.link_small
+					margin: 0
+					padding: 0 20px
+					font-size: 11px
+					line-height: 11px
+			.language
+				margin-top: 10px
+		&_socials
+			position: static
+			justify-content: center
+			margin-top: 25px
+		&_download
+			position: static
+			display: flex
+			justify-content: center
+			margin-top: 25px
+			&_item
+				margin: 5px
